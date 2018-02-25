@@ -198,10 +198,6 @@ node_identifier = str(uuid4()).replace('-', '')
 # Instantiate the Blockchain
 blockchain = Blockchain()
 
-@app.route('/')
-def main():
-    return render_template('index.html')
-
 
 @app.route('/mine', methods=['GET'])
 def mine():
